@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Automatic Anki Flaschards",
+  "version":"1.0",	
+  "description": "Create Anki flashcards automatically in your browser.",
+  "permissions": ["activeTab", "declarativeContent", "storage","contextMenus","tabs","*://*.jisho.org/*"],
+  "matches": ["<all_urls>"],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false},
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "images/128.png"},
+   "default_title": "Automatic Anki Cards"
+  },
+
+  "icons": {
+    "128": "images/128.png"
+  }
+}
